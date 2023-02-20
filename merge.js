@@ -136,11 +136,11 @@ async function handleSort(arr4) {
   document.getElementsByTagName("section")[1].appendChild(half1);
   half1.style.left = `${arr4.offsetLeft - sideMargin}px`;
   half1.style.top = `${arr4.offsetTop + arr4.offsetHeight + topMargin}px`;
-  await animateDivision(half1, "+", topMargin);
+  await animateDivision(half1, "+", sideMargin);
   document.getElementsByTagName("section")[1].appendChild(half2);
   half2.style.left = `${ half1.offsetLeft + half1.offsetWidth + sideMargin * 2 }px`;
   half2.style.top = `${half1.offsetTop}px`;
-  await animateDivision(half2, "-", topMargin);
+  await animateDivision(half2, "-", sideMargin);
   await handleSort(half1);
   await handleSort(half2);
   await merge(half1, half2, arr4);
