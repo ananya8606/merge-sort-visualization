@@ -1,0 +1,103 @@
+body {
+    background-color:papayawhip;
+  }
+  *{
+    font-size: 16px;
+    font-weight: bold !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .head {
+	margin-top: 20px;
+	margin-right: 20vw;
+	margin-left: 20vw;
+	text-align: center;
+	font-size: 30px;
+	background-color:greenyellow;
+	color: white;
+	border-radius: 19px;
+	font-weight: bolder;
+}
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 5rem;
+  }
+  .input-field {
+    width: 180px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+  }
+  .button-blue,
+  .button-green {
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+  }
+  .button-green {
+    background-color: #4cd430;
+  }
+  .button-blue {
+    background-color: #3478d5;
+  }
+  #input-visualizer {
+    margin: 0 5rem;
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+  }
+  #input-visualizer div {
+    margin-right: 10px;
+    background-color: #e6852c;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50px;
+    color: white;
+  }
+
+  section.merge-sort{
+    position: relative;
+    height:60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .container1{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.merge-sort div.array-container {
+    display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+    position:absolute;
+  }
+  
+  section.merge-sort div.array-container div.array-element {
+    height:30px;
+    width: 50px;
+    margin: 0 15px 0 15px;
+    background:purple;
+    text-align: center;
+    padding-top:10px;
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+  }
+  
