@@ -79,25 +79,14 @@ function animateDivision(element, direction) {
 
 function animateMerge(element, target) {
   return new Promise((resolve) => {
-    var rect = target.getBoundingClientRect();
-    var rect1 = element.getBoundingClientRect();
-
-    var offset = {
-      top: rect.top + window.scrollY,
-      left: rect.left + window.scrollX,
-    };
-    var offset1 = {
-      top: rect1.top + window.scrollY,
-      left: rect1.left + window.scrollX,
-    };
     element.animate(
       {
         transform: [
           "translate(0, 0)",
-          `translate(
-                    ${offset.left - offset1.left}px,
-                    ${offset.top - offset1.top}px
-                )`,
+           `translate(
+                    ${$(target).offset().left - $(element).offset().left}px,
+                    ${$(target).offset().top - $(element).offset().top}px
+                )`
         ],
       },
       1000
